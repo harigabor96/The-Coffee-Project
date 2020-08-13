@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The Coffee Project kávézó honlapja">
+    <meta name="author" content="Hári Gábor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="kepek/favicon.png"/>
+</head>
+<body>
+    <div class="row menu">
+            <nav>
+                <ul>
+                    <li class="col-1 col-12-t"></li>
+                    <li class="col-2 col-12-t"><a href="index.html" class="menuelem">Rólunk</a></li>
+                    <li class="col-2 col-12-t"><a href="uzletek.html" class="menuelem">Üzleteink</a></li>
+                    <li class="col-2 col-12-t"><a href="" class="activemenu">Étlap</a></li>
+                    <li class="col-2 col-12-t"><a href="galeria.html" class="menuelem">Galéria</a></li>
+                    <li class="col-2 col-12-t"><a href="kapcsolat.html" class="menuelem">Kapcsolat</a></li>
+                    <li class="col-1 col-12-t"></li>
+                </ul>
+            </nav>
+    </div>
+    <div class="row">
+        <header>
+            <h1 class="col-4 col-t-4 maintitle">The Coffee Project</h1>
+        </header>
+    </div>
+    <div class="row">
+        <div class="col-12 col-12-t">
+            <div class="kcaleredmeny">
+                <h2>Kalóriaszámláló (kcal)</h2>
+                <input type="text" class="kcaltext" value="0" disabled><br>
+                <input type="button" value="Értékek törlése" class="resetgomb">
+            </div>
+        </div>
+    </div> 
+    <div class="row">
+        <div class="col-6 col-12-t koztesdiv">
+            <div class="col-6 col-t-6 termekdiv">
+                <figure id="fig-1">
+                    <figcaption>Jegeskávé<br><span id="span-1">288</span> kcal</figcaption>
+                    <img src="kepek/Termekek/termek1.jpg" alt=""><br>
+                    <input type="button" class="button-left" value="-" id="dec-1">
+                    <input type="text" class="text" value="0" id="txt-1" disabled>
+                    <input type="button" class="button-right" value="+" id="inc-1">
+                </figure>            
+            </div>
+            <div class="col-6 col-t-6 termekdiv">
+                <figure id="fig-2">
+                    <figcaption>Espresso<br><span id="span-2">205</span> kcal</figcaption>
+                    <img src="kepek/Termekek/termek2.jpg" alt=""><br>
+                    <input type="button" class="button-left" value="-" id="dec-2">
+                    <input type="text" class="text" value="0" id="txt-2" disabled>
+                    <input type="button" class="button-right" value="+" id="inc-2">
+                </figure>            
+            </div>
+        </div>
+        <div class="col-6 col-12-t koztesdiv">
+            <div class="col-6 col-t-6 termekdiv">
+                <figure id="fig-3">
+                    <figcaption>Amerciano<br><span id="span-3">205</span> kcal</figcaption>
+                    <img src="kepek/Termekek/termek3.jpg" alt=""><br>
+                    <input type="button" class="button-left" value="-" id="dec-3">
+                    <input type="text" class="text" value="0" id="txt-3" disabled>
+                    <input type="button" class="button-right" value="+" id="inc-3">
+                </figure>            
+            </div>
+            <div class="col-6 col-t-6 termekdiv">
+                <figure id="fig-4">
+                    <figcaption>Latte<br><span id="span-4">180</span> kcal</figcaption>
+                    <img src="kepek/Termekek/termek4.jpg" alt=""><br>
+                    <input type="button" class="button-left" value="-" id="dec-4">
+                    <input type="text" class="text" value="0" id="txt-4" disabled>
+                    <input type="button" class="button-right" value="+" id="inc-4">
+                </figure>            
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 col-12-t koztesdiv">
+            <div class="col-6 col-t-6 termekdiv">
+                <figure id="fig-5">
+                    <figcaption>Cappuccino<br><span id="span-5">80</span> kcal</figcaption>
+                    <img src="kepek/Termekek/termek5.jpg" alt=""><br>
+                    <input type="button" class="button-left" value="-" id="dec-5">
+                    <input type="text" class="text" value="0" id="txt-5" disabled>
+                    <input type="button" class="button-right" value="+" id="inc-5">
+                </figure>            
+            </div>
+            <div class="col-6 col-t-6 termekdiv">
+                <figure id="fig-6">
+                    <figcaption>Fánk<br><span id="span-6">252</span> kcal</figcaption>
+                    <img src="kepek/Termekek/termek6.jpg" alt=""><br>
+                    <input type="button" class="button-left" value="-" id="dec-6">
+                    <input type="text" class="text" value="0" id="txt-6" disabled>
+                    <input type="button" class="button-right" value="+" id="inc-6">
+                </figure>            
+            </div>
+        </div>
+        <div class="col-6 col-12-t koztesdiv">
+            <div class="col-6 col-t-6 termekdiv">
+                <figure id="fig-7">
+                    <figcaption>Répatorta<br><span id="span-7">263</span> kcal</figcaption>
+                    <img src="kepek/Termekek/termek7.jpg" alt=""><br>
+                    <input type="button" class="button-left" value="-" id="dec-7">
+                    <input type="text" class="text" value="0" id="txt-7" disabled>
+                    <input type="button" class="button-right" value="+" id="inc-7">
+                </figure>            
+            </div>
+            <div class="col-6 col-t-6 termekdiv">
+                <figure id="fig-8">
+                    <figcaption>Csokitorta<br><span id="span-8">365</span> kcal</figcaption>
+                    <img src="kepek/Termekek/termek8.jpg" alt=""><br>
+                    <input type="button" class="button-left" value="-" id="dec-8">
+                    <input type="text" class="text" value="0" id="txt-8" disabled>
+                    <input type="button" class="button-right" value="+" id="inc-8">
+                </figure>            
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 col-12-t koztesdiv">
+            <div class="col-6 col-t-6 termekdiv">
+                <figure id="fig-9">
+                    <figcaption>Túrótorta<br><span id="span-9">194</span> kcal</figcaption>
+                    <img src="kepek/Termekek/termek9.jpg" alt=""><br>
+                    <input type="button" class="button-left" value="-" id="dec-9">
+                    <input type="text" class="text" value="0" id="txt-9" disabled>
+                    <input type="button" class="button-right" value="+" id="inc-9">
+                </figure>            
+            </div>
+            <div class="col-6 col-t-6 termekdiv">
+                <figure id="fig-10">
+                    <figcaption>Zöld tea<br><span id="span-10">35</span> kcal</figcaption>
+                    <img src="kepek/Termekek/termek10.jpg" alt=""><br>
+                    <input type="button" class="button-left" value="-" id="dec-10">
+                    <input type="text" class="text" value="0" id="txt-10" disabled>
+                    <input type="button" class="button-right" value="+" id="inc-10">
+                </figure>            
+            </div>
+        </div>
+        <div class="col-6 col-12-t koztesdiv">
+            <div class="col-6 col-t-6 termekdiv">
+                <figure id="fig-11">
+                    <figcaption>Fekete tea<br><span id="span-11">35</span> kcal</figcaption>
+                    <img src="kepek/Termekek/termek11.jpg" alt=""><br>
+                    <input type="button" class="button-left" value="-" id="dec-11">
+                    <input type="text" class="text" value="0" id="txt-11" disabled>
+                    <input type="button" class="button-right" value="+" id="inc-11">
+                </figure>            
+            </div>
+            <div class="col-6 col-t-6 termekdiv">
+                <figure id="fig-12">
+                    <figcaption>Gyümölcstea<br><span id="span-12">35</span> kcal</figcaption>
+                    <img src="kepek/Termekek/termek12.jpg" alt=""><br>
+                    <input type="button" class="button-left" value="-" id="dec-12">
+                    <input type="text" class="text" value="0" id="txt-12" disabled>
+                    <input type="button" class="button-right" value="+" id="inc-12">
+                </figure>            
+            </div>
+        </div>
+    </div> 
+    <div class="row">
+        <footer>
+            <h2>A weboldalon megjelenített vállalat nem valós.</h2>
+        </footer>
+    </div>
+    <script src="termekek.js"></script>
+</body>
+</html>

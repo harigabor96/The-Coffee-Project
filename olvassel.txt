@@ -1,0 +1,39 @@
+Oldal készítője: Hári Gábor
+
+A weboldal témája:
+A weboldal egy képzeletbeli, teljesen átlagos budapesti kávézó franchise a "The Coffee Project" honlapja.
+A kávézóikban süteményeket, teát és természetesen kávét lehet kapni.
+
+A JavaScript fájl termekek.js néven szerepel a projektben és kizárólag a termekek.html oldalon van behivatkozva, 
+közvetlen a </body> tag előtt. A JS célja, hogy a felhasználó számára számolja, hogy a kávézóban fogyasztható termékek
+fogyasztása esetén hány kalória energiát visz be a szervezetébe. Ez nem rendelési oldal, szimplán egy étlap, mely segíti
+azokat, akik tudatosan szeretnének táplálkozni.
+
+Mivel a JavaScript túlmutat az órai anyagon a forrásokat bővebben részletezem:
+-A formhoz felhasznált "előre beépített" függvényket ezelőtt is ismertem, többségében a félévben 
+ többször is említett Udemy kurzusból (https://www.udemy.com/course/the-complete-javascript-course/)
+-A beadnadót jó alkalomnak tartottam az konstruktorok, prototípusok és objektumok gyakorlására, 
+ melyeket szintén az Udemy kurzusból ismerek
+-Természetesen a Module Design Pattern-t sem én találtam ki, ezt is az Udemy kurzusból ismerem és
+ a beadandót ebben az esetben is gyakorlási lehetőségnek használtam
+-A működési logikát, függvény és objektumdefiníciókat teljesen önállóan állítottam elő
+ Stack Overflowt, Googlet és egyéb forrásokat maximum szintaxis felelevenítésre használtam
+
+Egyéb felhasznált források:
+ -Kalória értékek: https://kaloriabazis.hu/
+ -index.html "szövegdobozainak" szövege: https://www.cafefrei.com/about
+ -Kávézóról készült képek: https://www.behance.net/gallery/52864027/Fabryka-Kavy-coffee-shop-(2017)
+ -A termékekről készült képek és a favicon google keresésből származnak sok különböző forrásból
+ -JQuery galéria "reszponzivitásának" (nagyon csúnya) megvalósítása: https://forum.jquery.com/, https://stackoverflow.com/
+ -Beágyazott google térképek: https://googlemapsembed.net/
+
+Két google fontot használtam, melyet letöltve, lokálisan tároltam a projektben a "betutipusok" mappában:
+-Dancing Script Boldot használtam a címhez, összesen egy helyen oldalanként
+-Roboto Regulart használtam minden másra
+
+Több HTML5 form elemet használtam, mindegyiket a kapcsolat.html lapon:
+-email
+-tel
+-datalist
+-textarea (ez nem biztos, hogy HTML5)
+

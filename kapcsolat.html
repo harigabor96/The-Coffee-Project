@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The Coffee Project kávézó honlapja">
+    <meta name="author" content="Hári Gábor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="kepek/favicon.png"/>
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="jquery-validation-1.19.1/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#contactForm").validate({
+            rules: {
+                nev: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                telefon: "required",
+                targy: "required",
+                uzenet: "required",
+            },
+
+            messages: {
+                nev: " Kérlek add meg a teljes nevedet!",
+                email: " Kérlek add meg az E-mail címedet!",
+                telefon: " Kérlek add meg a telefonszámodat!",
+                targy: " Kérlek add meg az üzeneted tárgyát!",
+                uzenet: " Elfeljetetted leírni az üzenetedet!",
+            }
+        });
+        });
+        </script>          
+</head>
+<body>
+    <div class="row menu">
+            <nav>
+                <ul>
+                    <li class="col-1 col-12-t"></li>
+                    <li class="col-2 col-12-t"><a href="index.html" class="menuelem">Rólunk</a></li>
+                    <li class="col-2 col-12-t"><a href="uzletek.html" class="menuelem">Üzleteink</a></li>
+                    <li class="col-2 col-12-t"><a href="termekek.html" class="menuelem">Étlap</a></li>
+                    <li class="col-2 col-12-t"><a href="galeria.html" class="menuelem">Galéria</a></li>
+                    <li class="col-2 col-12-t"><a href="" class="activemenu">Kapcsolat</a></li>
+                    <li class="col-1 col-12-t"></li>
+                </ul>
+            </nav>
+    </div>
+    <div class="row">
+        <header>
+            <h1 class="col-4 col-t-4 maintitle">The Coffee Project</h1>
+        </header>
+    </div>
+    <div class="row">
+       <div class="col-12 col-t-12">
+            <form action="http://szamtud.uni-corvinus.hu/~blang/receive.php" id="contactForm" novalidate>
+                <table class="urlap">
+                    <tr>
+                        <td class="cimsor" colspan="2">
+                            <h1>Lépjen kapcsolatba velünk!</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dobozok" colspan="2">
+                            <p><label for="nev">Név:</label><br><input type="text" name="nev" id="nev"></p>
+                            <p><label for="email">E-mail:</label><br><input type="email" name="email" id="email"></p>
+                            <p><label for="telefon">Telefon:</label><br><input type="tel" name="telefon" id="telefon"></p>
+                            <p><label for="targyid">Tárgy:</label><br><input type="text" list="targy" name="targy" id="targyid"></p> 
+                            <datalist id="targy">
+                                <option value="Asztalfoglalás">
+                                <option value="Vendég voltam">
+                                <option value="Franchise csatlakozás">
+                                <option value="Jelentkezés állásra">
+                            </datalist>   
+                            <p>
+                                <label for="uzenet">Üzenet:</label><br>
+                                <textarea rows="6" cols="53" name="uzenet" id="uzenet"></textarea>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="kuldes">
+                            <input type="submit" value="Elküld" class="kuldgomb">
+                        </td>
+                        <td class="torles">
+                            <input type="reset" value="Töröl" class="resetgomb">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+       </div>
+    </div>
+    <div class="row">
+        <footer>
+            <h2>A weboldalon megjelenített vállalat nem valós.</h2>
+        </footer>
+    </div>
+</body>
+</html>
