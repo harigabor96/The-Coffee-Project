@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The Coffee Project kávézó honlapja">
+    <meta name="author" content="Hári Gábor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    <script src="jquery/jquery-3.5.0.min.js"></script>
+    <script src="jquery/galleria-1.6.1/dist/galleria.js"></script>
+    <script src="jquery/galleria-1.6.1/dist/themes/classic/galleria.classic.js"></script>
+    <script> 
+        $(document).ready(function() {
+            var xWidth = $(window).width();
+            $('#images').galleria({
+            width: xWidth*0.9,
+            height: 800
+            }); 
+        });
+
+        $(window).resize(function() {
+            location.reload();
+        });
+    </script>        
+</head>
+<body>
+    <div class="row menu">
+            <nav>
+                <ul>
+                    <li class="col-1 col-12-t"></li>
+                    <li class="col-2 col-12-t"><a href="index.html" class="menupart">Rólunk</a></li>
+                    <li class="col-2 col-12-t"><a href="stores.html" class="menupart">Üzleteink</a></li>
+                    <li class="col-2 col-12-t"><a href="products.html" class="menupart">Étlap</a></li>
+                    <li class="col-2 col-12-t"><a href="" class="activemenu">Galéria</a></li>
+                    <li class="col-2 col-12-t"><a href="contact.html" class="menupart">Kapcsolat</a></li>
+                    <li class="col-1 col-12-t"></li>
+                </ul>
+            </nav>
+    </div>
+    <div class="row">
+        <header>
+            <h1 class="col-4 col-t-4 maintitle">The Coffee Project</h1>
+        </header>
+    </div>
+    <div class="row" id="galleryRow">
+        <div id="images">
+            <img src="images/Galeria/img1.jpg" alt="" title="">
+            <img src="images/Galeria/img2.jpg" alt="" title="">
+            <img src="images/Galeria/img3.jpg" alt="" title="">
+            <img src="images/Galeria/img4.jpg" alt="" title="">
+            <img src="images/Galeria/img5.jpg" alt="" title="">
+            <img src="images/Galeria/img6.jpg" alt="" title="">
+            <img src="images/Galeria/img7.jpg" alt="" title="">
+            <img src="images/Galeria/img8.jpg" alt="" title="">
+            <img src="images/Galeria/img9.jpg" alt="" title="">
+            <img src="images/Galeria/img10.jpg" alt="" title="">
+            <img src="images/Galeria/img11.jpg" alt="" title="">
+            <img src="images/Galeria/img12.jpg" alt="" title="">
+            <img src="images/Galeria/img13.jpg" alt="" title="">
+            <img src="images/Galeria/img14.jpg" alt="" title="">
+        </div>   
+    </div>
+    <div class="row">
+        <footer>
+            <h2>A weboldalon megjelenített vállalat nem valós.</h2>
+        </footer>
+    </div>
+</body>
+</html>

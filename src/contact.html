@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Coffee Project</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="kepek/favicon.png"/>
-    <script src="jquery-3.5.0.min.js"></script>
-    <script src="jquery-validation-1.19.1/dist/jquery.validate.min.js"></script>
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    <script src="jquery/jquery-3.5.0.min.js"></script>
+    <script src="jquery/jquery-validation-1.19.1/dist/jquery.validate.min.js"></script>
     <script>
         $(document).ready(function(){
         $("#contactForm").validate({
@@ -40,10 +40,10 @@
             <nav>
                 <ul>
                     <li class="col-1 col-12-t"></li>
-                    <li class="col-2 col-12-t"><a href="index.html" class="menuelem">Rólunk</a></li>
-                    <li class="col-2 col-12-t"><a href="uzletek.html" class="menuelem">Üzleteink</a></li>
-                    <li class="col-2 col-12-t"><a href="termekek.html" class="menuelem">Étlap</a></li>
-                    <li class="col-2 col-12-t"><a href="galeria.html" class="menuelem">Galéria</a></li>
+                    <li class="col-2 col-12-t"><a href="index.html" class="menupart">Rólunk</a></li>
+                    <li class="col-2 col-12-t"><a href="stores.html" class="menupart">Üzleteink</a></li>
+                    <li class="col-2 col-12-t"><a href="products.html" class="menupart">Étlap</a></li>
+                    <li class="col-2 col-12-t"><a href="galeria.html" class="menupart">Galéria</a></li>
                     <li class="col-2 col-12-t"><a href="" class="activemenu">Kapcsolat</a></li>
                     <li class="col-1 col-12-t"></li>
                 </ul>
@@ -57,14 +57,14 @@
     <div class="row">
        <div class="col-12 col-t-12">
             <form action="http://szamtud.uni-corvinus.hu/~blang/receive.php" id="contactForm" novalidate>
-                <table class="urlap">
+                <table class="form">
                     <tr>
-                        <td class="cimsor" colspan="2">
+                        <td class="title" colspan="2">
                             <h1>Lépjen kapcsolatba velünk!</h1>
                         </td>
                     </tr>
                     <tr>
-                        <td class="dobozok" colspan="2">
+                        <td class="boxes" colspan="2">
                             <p><label for="nev">Név:</label><br><input type="text" name="nev" id="nev"></p>
                             <p><label for="email">E-mail:</label><br><input type="email" name="email" id="email"></p>
                             <p><label for="telefon">Telefon:</label><br><input type="tel" name="telefon" id="telefon"></p>
@@ -82,11 +82,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="kuldes">
-                            <input type="submit" value="Elküld" class="kuldgomb">
+                        <td class="send">
+                            <input type="submit" value="Elküld" class="sendbutton">
                         </td>
-                        <td class="torles">
-                            <input type="reset" value="Töröl" class="resetgomb">
+                        <td class="delete">
+                            <input type="reset" value="Töröl" class="resetbutton">
                         </td>
                     </tr>
                 </table>
